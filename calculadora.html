@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <script src="calculadora2.js"></script>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .container{
+            margin-top: 150px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            
+            
+        }
+        .box{
+            display: grid;
+            height: 300px;
+            width: 350px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+        }
+        #resultado{
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+            
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: rgb(22, 21, 21);
+        }
+        #nigl{
+            grid-row-start:3;
+            grid-row-end: 7;
+            grid-column-start: 4;
+            grid-column-end: 4;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: #fa7f72;
+            
+        }
+        
+        #nmais{
+            grid-row-start:2;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            background-color: rgb(199, 199, 199);
+        }
+        #nmenos{
+            grid-row-start:2;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            background-color: rgb(199, 199, 199);
+        }
+        #nx{
+            grid-row-start:2;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end: 3;
+            background-color: rgb(199, 199, 199);
+
+        }
+        #ndv{
+            grid-row-start:2;
+            grid-row-end: 2;
+            grid-column-start: 4;
+            grid-column-end: 4;
+            background-color: rgb(199, 199, 199);
+        }
+        #npnt{
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start:6;
+            grid-row-end: 6;
+        }
+    </style>
+    
+</head>
+<body>
+<div class="container">
+    <div class="box">
+        <label type="number"  id="resultado"  ></label>
+        <button type="number" value="1" id="n1" >1</button>
+        <button type="number" value="2" id="n2" >2</button>
+        <button type="number" value="3" id="n3" >3</button>
+        <button type="number" value="4" id="n4" >4</button>
+        <button type="number" value="5" id="n5" >5</button>
+        <button type="number" value="6" id="n6" >6</button>
+        <button type="number" value="7" id="n7" >7</button>
+        <button type="number" value="8" id="n8" >8</button>
+        <button type="number" value="9" id="n9" >9</button>
+        <button type="text" id="nmais" >+</button>
+        <button type="text" id="nmenos" >-</button>
+        <button type="text" id="nx" >X</button>
+        <button type="text" id="ndv" >%</button>
+        <button type="submit" id="nigl" >=</button>
+        <button type="text" id="npnt" >.</button>
+        <button type="number" value="0" id="n0" onclick="N1()" >0</button>
+        <button type="submit" id="nc" >C</button>
+    </div>
+</div>
+</body>
+</html>
