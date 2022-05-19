@@ -27,7 +27,8 @@
             
             grid-column-start: 1;
             grid-column-end: 5;
-            background-color: rgb(22, 21, 21);
+            background-color: whitesmoke;
+            
         }
         #nigl{
             grid-row-start:3;
@@ -81,23 +82,23 @@
 <div class="container">
     <div class="box">
         <label type="number"  id="resultado"  ></label>
-        <button type="number" value="1" id="n1" >1</button>
-        <button type="number" value="2" id="n2" >2</button>
-        <button type="number" value="3" id="n3" >3</button>
-        <button type="number" value="4" id="n4" >4</button>
-        <button type="number" value="5" id="n5" >5</button>
-        <button type="number" value="6" id="n6" >6</button>
-        <button type="number" value="7" id="n7" >7</button>
-        <button type="number" value="8" id="n8" >8</button>
-        <button type="number" value="9" id="n9" >9</button>
-        <button type="text" id="nmais" >+</button>
-        <button type="text" id="nmenos" >-</button>
-        <button type="text" id="nx" >X</button>
-        <button type="text" id="ndv" >%</button>
-        <button type="submit" id="nigl" >=</button>
-        <button type="text" id="npnt" >.</button>
-        <button type="number" value="0" id="n0" onclick="N1()" >0</button>
-        <button type="submit" id="nc" >C</button>
+        <button type="number" value="1" id="n1" onclick="imprimir_algo('1')" >1</button>
+        <button type="number" value="2" id="n2" onclick="imprimir_algo('2')" >2</button>
+        <button type="number" value="3" id="n3" onclick="imprimir_algo('3')" >3</button>
+        <button type="number" value="4" id="n4" onclick="imprimir_algo('4')" >4</button>
+        <button type="number" value="5" id="n5" onclick="imprimir_algo('5')" >5</button>
+        <button type="number" value="6" id="n6" onclick="imprimir_algo('6')" >6</button>
+        <button type="number" value="7" id="n7" onclick="imprimir_algo('7')">7</button>
+        <button type="number" value="8" id="n8" onclick="imprimir_algo('8')" >8</button>
+        <button type="number" value="9" id="n9" onclick="imprimir_algo('9')" >9</button>
+        <button type="text" id="nmais" onclick="imprimir_algo('+')" >+</button>
+        <button type="text" id="nmenos" onclick="imprimir_algo('-')" >-</button>
+        <button type="text" id="nx" onclick="imprimir_algo('*')">X</button>
+        <button type="text" id="ndv" onclick="imprimir_algo('/')" >%</button>
+        <button type="submit" id="nigl"onclick="calcular()" >=</button>
+        <button type="text" id="npnt"onclick="imprimir_algo('.')" >.</button>
+        <button type="number" value="0" id="n0" onclick="imprimir_algo('0')" >0</button>
+        <button type="submit" id="nc" onclick="apagar()" >C</button>
     </div>
 </div>
 </body>
